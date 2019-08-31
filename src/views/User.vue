@@ -12,7 +12,7 @@
 export default {
    data () {
        return {
-           users: [10,20,30,40,50]
+           users: [102,20,30,40,50]
 
        }
    }
