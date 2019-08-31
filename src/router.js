@@ -7,13 +7,16 @@ const Contact = () => import('./views/Contact.vue'/* webpackChunkName: 'Contact'
 const User = () => import('./views/User.vue'/* webpackChunkName: 'User' */)
 const UserProfile = () => import('./views/UserProfile.vue'/* webpackChunkName: 'User' */)
 const Form = () => import('./views/Form.vue'/* webpackChunkName: 'form' */)
-
+const Chart = () => import('./views/Chart.vue'/* webpackChunkName: 'Chart' */)
+const i18n = () => import('./views/i18n.vue'/* webpackChunkName: 'i18n' */)
 
 Vue.use(VueRouter)
 
 const routes = [
     { path: '/',component:Home },
     { path: '/form',component:Form },
+    { path: '/chart',component:Chart },
+    { path: '/i18n',component:i18n },
     { path: '/About',component:About },
     { path: '/Contact',component:Contact },
     { path: '/user',component:User },

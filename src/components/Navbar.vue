@@ -6,6 +6,10 @@
        {{' | '}}
          <router-link to="/form">form</router-link>
         {{' | '}}
+        <router-link to="/chart">Chart</router-link>
+        {{' | '}}
+        <router-link to="/i18n">i18n</router-link>
+        {{' | '}}
          <router-link to="/about">About</router-link>
         {{' | '}}
          <router-link to="/contact">Contact</router-link>
