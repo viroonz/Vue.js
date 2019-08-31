@@ -1,10 +1,12 @@
 <template>
   <div >
-
-    <h1> App </h1>
-    <navbar/>
-    <router-view/>
-
+     <section class="section">
+          <div class="container">
+             <h1> App </h1>
+             <navbar/>
+             <router-view/>
+          </div>
+     </section>
   </div>
 
   
@@ -12,6 +14,7 @@
 
 <script>
 import Navbar from './components/Navbar'
+import 'bulma/css/bulma.min.css'
 import './style.css'
 export default {
    components:{

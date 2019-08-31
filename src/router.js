@@ -6,13 +6,14 @@ const About = () => import('./views/About.vue'/* webpackChunkName: 'About' */)
 const Contact = () => import('./views/Contact.vue'/* webpackChunkName: 'Contact' */)
 const User = () => import('./views/User.vue'/* webpackChunkName: 'User' */)
 const UserProfile = () => import('./views/UserProfile.vue'/* webpackChunkName: 'User' */)
-
+const Form = () => import('./views/Form.vue'/* webpackChunkName: 'form' */)
 
 
 Vue.use(VueRouter)
 
 const routes = [
     { path: '/',component:Home },
+    { path: '/form',component:Form },
     { path: '/About',component:About },
     { path: '/Contact',component:Contact },
     { path: '/user',component:User },
