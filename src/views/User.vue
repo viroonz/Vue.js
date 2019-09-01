@@ -2,13 +2,14 @@
 <div>
   <h1>User</h1>
   <div class="box">
-   <div class="field">
-         <input v-model="filter" type="text" class="input"/>
+   <div class="from">
+         <input v-model="filter" type="text" class="form-control"/>
          <pre> {{ filter }} </pre>
      </div>
 
-     <div class="box">
-      <button @click="getUsers()" class="button">Get User</button>
+     <div class="card">
+               <p>Counter: {{ $store.state.counter }}</p>
+      <button @click="getUsers(),$store.commit('mutateCounter')"  class="btn btn-success">Show</button>
       </div>
   </div>
 

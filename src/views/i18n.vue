@@ -1,7 +1,7 @@
 <template>
   <div> 
      <h1> I18n </h1>
-          <button @click="$i18n.locale=nextLocale" class="button">{{ nextLocale }}</button>
+          <button @click="$i18n.locale=nextLocale" class="btn btn-success">{{ nextLocale }}</button>
       <p>Hello Message: {{ $t('hello') }}</p>
      <p>{{ $t('months[1]') }}</p>
         <p>{{ $tc('apple', 0) }}</p>

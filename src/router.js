@@ -11,6 +11,7 @@ const Nested = () => import('./views/Nested.vue'/* webpackChunkName: 'i18n' */)
 const Chart = () => import('./views/Chart.vue'/* webpackChunkName: 'Chart' */)
 const Search = () => import('./views/Search.vue'/* webpackChunkName: 'Search' */)
 const i18n = () => import('./views/i18n.vue'/* webpackChunkName: 'i18n' */)
+const Pagination = () => import('./views/Pagination.vue'/* webpackChunkName: 'i18n' */)
 
 Vue.use(VueRouter)
 
@@ -21,7 +22,8 @@ const routes = [
     { path: '/i18n',component:i18n },
     { path: '/about',component:About },
     { path: '/nested',component:Nested },
-        { path: '/search', component: Search },
+    { path: '/search', component: Search },
+    { path: '/pagedata', component: Pagination },
     { path: '/Contact',component:Contact },
     { path: '/user',component:User },
     { path: '/user/:id',component:UserProfile },

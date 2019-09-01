@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1 class="title">Chart</h1>
-     <button @click="type=t" class="button" style="margin:3px;" v-for="t in types" :key="t">{{ t }}</button>
+     <button @click="type=t" class="btn btn-dark" style="margin:3px;" v-for="t in types" :key="t">{{ t }}</button>
        <hr>
         <apexcharts :type="type" :series="series" :options="options" />
     </div>

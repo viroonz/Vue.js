@@ -1,31 +1,33 @@
 <template>
 
-   <div class="box">
-     <h1 class="title">Manager User</h1>
-         <table class="table ">
+   <div class="container">
+     <h1 class="">Manager User</h1>
+         <table class="table table-hover table-dark">
      <thead>
-          <th>id</th>
-          <th>username</th>
-          <th>name</th>
-          <th>email</th>
-
+       <tr>
+          <th scope="col">id</th>
+          <th scope="col">username</th>
+          <th scope="col">name</th>
+          <th scope="col">email</th>
+        </tr>
      </thead>
      
      <tbody v-for="each in users" :key="each.id">
-       
-       <td>
+       <tr>
+       <td >
          <p>{{ each.id }}</p>
          </td>
-       <td>
+       <td >
       
-          <router-link :to="'/user/' + each.id">{{ each.username }} </router-link>
+          <router-link class="btn btn-success" :to="'/user/' + each.id">{{ each.username }} </router-link>
        </td>
-       <td>
+       <td >
          <p>{{each.name}}</p>
        </td>
-     <td>
+     <td >
          <p>{{each.email}}</p>
        </td>
+       </tr>
      </tbody>
    </table>
    </div>

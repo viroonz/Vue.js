@@ -1,9 +1,13 @@
 <template>
     <div class="box">
         <h1>Nested</h1>
-         <progress class="progress" :value="counter" min="1" max="20"> </progress>
-       <button @click="counter+=1" class="button" >update</button> <br> <br>
-       <button @click="resetCounter()" class="button is-danger"> Reset </button>
+    
+         <progress class="btn-block bg-dark " :value="counter" min="1" max="20"> </progress>
+         
+     
+         <br>
+       <button @click="counter+=1" class="btn btn-success btn-block" >update</button>
+       <button @click="resetCounter()" class="btn btn-danger btn-block"> Reset </button>
    <hr>  <one @reset="resetCounter()" :counter="counter"/>
     </div>
   
