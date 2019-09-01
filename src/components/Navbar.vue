@@ -12,9 +12,13 @@
         {{' | '}}
          <router-link to="/about">About</router-link>
         {{' | '}}
+         <router-link to="/Nested">Nested</router-link>
+        {{' | '}}        
          <router-link to="/contact">Contact</router-link>
         {{' | '}}
          <router-link to="/user">User</router-link>
+      {{' | '}}
+         <router-link to="/search">search</router-link>
       
    </div>
 </template>
